@@ -19,7 +19,7 @@ const Navbar = () => {
   
   console.log(shoplist);
   useEffect(() => {
-    onSnapshot(doc(db, 'users', 'ri74WwG1zBxZwnjEJvbG'), (snapshot) => {
+    onSnapshot(doc(db, 'users', 'PGbNg4hlrnNRBvvAOdMp'), (snapshot) => {
       dispatch(getShoplist('a'));
     });
   }, [dispatch]);
