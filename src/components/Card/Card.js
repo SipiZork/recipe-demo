@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { orangeColorPalette } from '../../styles/colors';
 
-const Card = ({ recipe, id}) => {
-  console.log(recipe);
+const Card = ({ recipe, id }) => {
   return (
     <StyledCard to={`recipe/${id}`} className="name">
       <div className="name">{recipe.name}</div>
@@ -42,7 +41,8 @@ const StyledCard = styled(Link)`
   }
 
   .name {
-    height: 3rem;
+    min-height: 3rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
